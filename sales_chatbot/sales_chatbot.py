@@ -23,8 +23,7 @@ def sales_chat(message, history):
     print(f"[message]{message}")
     print(f"[history]{history}")
     # TODO: 从命令行参数中获取
-    enable_chat = True
-
+    enable_chat = False
     ans = SALES_BOT({"query": message})
     # 如果检索出结果，或者开了大模型聊天模式
     # 返回 RetrievalQA combine_documents_chain 整合的结果
